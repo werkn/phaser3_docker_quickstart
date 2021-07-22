@@ -14,4 +14,4 @@ Provides a pre-configured Phaser3 environment (webserver is Apache).
 
 ![screenshot](./www/resources/images/screenshot.png)
 
-Congrats!  Your setup and ready to start developing with Phaser3, look in `./www/index.html` for the Phaser3 test file shown.  Note that everything in `./www` is shared into the Docker container's webserver and moutned at the site root (ie: `localhost/(HERE)`).
+Congrats!  Your setup and ready to start developing with Phaser3, look in `./www/index.html` for the Phaser3 test file shown.  Note that everything in `./www` is shared into the Docker container's webserver and mounted at the site root (ie: `localhost/(HERE)`).
