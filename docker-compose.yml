@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  phaser3-build:
+    build:
+      context: .
+    container_name: 'phaser3_docker_quickstart'
+    tty: true
+    restart: 'always'
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ${WWW-./www}:/usr/local/apache2/htdocs
+    environment:
+      - APACHE_SERVER_ADMIN_EMAIL
+      - APACHE_DOCUMENT_ROOT
+      - APACHE_SERVER_NAME
